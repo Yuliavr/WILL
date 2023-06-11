@@ -11,8 +11,25 @@ function stringMasLarga(strings) {
   // stringMasLarga(['hi', 'hello', 'ni hao', 'guten tag']); debe retornar 'guten tag'
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
-  // Tu código aca
+  // Tu código aca:
+
+  var cadenaLarga = strings[0]; // recorre desde el indice 0 definido = "hi"
+
+  for (var i = 1; i < strings.length; i++) { // recorre desde el siguiente arreglo "hello"
+    if (cadenaLarga.length <= strings[i].length){ //comparando la cantidad de carateres
+      cadenaLarga = strings[i]; //compara el indice le puse con la nueva condicion
+    }
+    
+  }
+return cadenaLarga;
+
 }
+
+
+// console.log(stringMasLarga('hi', 'hello', 'ni hao', 'guten tag'));
+// console.log(stringMasLarga('JavaScript', 'HTML', 'CSS'));
+
+
 
 // No modifiques nada debajo de esta linea //
 
